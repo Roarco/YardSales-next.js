@@ -13,9 +13,9 @@ const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      <img src={menu} alt='menu' className='menu' onClick={() => handleToogleMenuMobile()} />
-      <div className='navbar-left'>
-        <img src={logo} alt='logo' className='navbar-lef-logo' />
+      <img src={menu} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
+      <div className={styles['navbar-left']}>
+        <img src={logo} alt='logo' className={styles['navbar-lef-logo']} />
         <ul>
           <li><a href='/'>All</a></li>
           <li><a href='/'>Clothes</a></li>
@@ -25,10 +25,10 @@ const Header = () => {
           <li><a href='/'>Others</a></li>
         </ul>
       </div>
-      <div className='navbar-rigth'>
+      <div className={styles['navbar-rigth']}>
         <ul>
           <li onClick={() => handleToogleMenu()}>camilayakoo@gmail.com</li>
-          <li className='navbar-shopping-cart' onClick={() => handleToogleOrders()}>
+          <li className={styles['navbar-shopping-cart']} onClick={() => handleToogleOrders()}>
             <img src={cart} alt='cart' />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
