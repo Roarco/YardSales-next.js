@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@container/MyOrder';
 import menu from '@icons/icon_menu.svg';
@@ -13,9 +14,9 @@ const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      <img src={menu} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
+      <Image src={menu} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
       <div className={styles['navbar-left']}>
-        <img src={logo} alt='logo' className={styles['navbar-lef-logo']} />
+        <Image src={logo} alt='logo' className={styles['navbar-lef-logo']} />
         <ul>
           <li><a href='/'>All</a></li>
           <li><a href='/'>Clothes</a></li>
@@ -29,7 +30,7 @@ const Header = () => {
         <ul>
           <li onClick={() => handleToogleMenu()}>camilayakoo@gmail.com</li>
           <li className={styles['navbar-shopping-cart']} onClick={() => handleToogleOrders()}>
-            <img src={cart} alt='cart' />
+            <Image src={cart} alt='cart' />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
