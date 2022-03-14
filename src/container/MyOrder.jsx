@@ -3,8 +3,8 @@
 import React, { useContext } from 'react';
 import AppContext from '@context/AppContext';
 import arrow from '@icons/flechita.svg';
-import OrderItem from '../components/OrderItem';
-import '../styles/MyOrder.scss';
+import OrderItem from '@components/OrderItem';
+import styles from '@styles/MyOrder.module.scss';
 
 const MyOrder = () => {
 
@@ -17,7 +17,7 @@ const MyOrder = () => {
   };
 
   return (
-    <aside className='MyOrder'>
+    <aside className={styles.MyOrder}>
       <div className='title-container'>
         <img src={arrow} alt='arrow' onClick={() => handleToogleOrders()} />
         <p className='MyOrder-title'>My order</p>

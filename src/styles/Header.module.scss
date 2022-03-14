@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     height: 48px;
-    border-bottom: 1px solid var(--very-ligth-pink);
+    border-bottom: 1px solid $--very-ligth-pink;
     position: fixed;
     top: 0;
 }
@@ -36,11 +36,11 @@
 }
 .navbar-left ul li a{
     text-decoration: none;
-    color: var(--very-ligth-pink);
+    color: $--very-ligth-pink;
 }
 .navbar-left ul li a:hover{
-    color: var(--hospital-green);
-    border: 1px solid var(--hospital-green);
+    color: $--hospital-green;
+    border: 1px solid $--hospital-green;
     padding:  2px 10px;
     border-radius: 10px;
 }
@@ -48,7 +48,7 @@
     list-style: none;
     cursor: pointer;
     margin-right: 20px;
-    font-size: var(--sm);
+    font-size: $--sm;
     font-weight: 100;
 }
 .navbar-shopping-cart {
@@ -60,7 +60,7 @@
     top: -5px;
     right: -8px;
     font-size: 11px;
-    background-color: var(--hospital-green);
+    background-color: $--hospital-green;
     border-radius: 50%;
     width: 16px;
     height: 16px;

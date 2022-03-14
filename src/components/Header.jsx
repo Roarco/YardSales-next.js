@@ -1,18 +1,18 @@
 /* eslint-disable import/no-unresolved */
 import React, { useContext } from 'react';
-import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import MyOrder from '@container/MyOrder';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import AppContext from '@context/AppContext';
 import cart from '@icons/icon_shopping_cart.svg';
+import styles from '@styles/Header.module.scss';
 
 const Header = () => {
   const { state, handleToogleMenu, handleToogleMenuMobile, handleToogleOrders } = useContext(AppContext);
 
   return (
-    <nav className='navbar'>
+    <nav className={styles.navbar}>
       <img src={menu} alt='menu' className='menu' onClick={() => handleToogleMenuMobile()} />
       <div className='navbar-left'>
         <img src={logo} alt='logo' className='navbar-lef-logo' />
