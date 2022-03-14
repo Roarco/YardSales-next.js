@@ -1,0 +1,52 @@
+@import "vars";
+
+.Menu{
+    width: 120px;
+    height: auto;
+    border: 1px solid var(--very-ligth-pink);
+    border-radius: 8px;
+    padding: 6px 20px 20px 20px;
+    position: fixed;
+    right: 90px;
+    top: 48px;
+    background-color: white;
+    z-index: 1;
+}
+
+.Menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Menu ul li{
+    text-align: end;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Menu ul li:last-child{
+    border-top: 1px solid var(--very-ligth-pink);
+    padding: 20px 10px 0px 0px;
+}
+
+.Menu ul li:nth-child(2){
+    padding-bottom: 30px;
+}
+
+.Menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.Menu ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+}
+
+@media (max-width: 640px){
+    .Menu {
+        display: none;
+    }
+}

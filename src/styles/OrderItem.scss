@@ -1,0 +1,39 @@
+@import "vars";
+
+.OrderItem{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.OrderItem figure {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.OrderItem figure img{
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+}
+
+.OrderItem figure p{
+    margin-left: 20px;
+    font-size: var(--sm);
+    font-weight: 100;
+}
+
+.OrderItem  div {
+    display: flex;
+    align-items: center;
+}
+.OrderItem  div p {
+    font-weight: bold;
+    margin-right: 20px;
+}
+.OrderItem  div img {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
