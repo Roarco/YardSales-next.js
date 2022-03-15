@@ -3,7 +3,7 @@
 .ProductList{
     --card-size: 240px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, var(--card-size));
+    grid-template-columns: repeat(auto-fill, 240px);
     gap: 30px;
     place-content: center;
     margin: 5em 0 0 0;

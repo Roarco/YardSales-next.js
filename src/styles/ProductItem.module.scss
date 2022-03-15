@@ -1,12 +1,12 @@
 @import "vars";
 
 .ProductItem{
-    width: var(--card-size);
+    width: 240px;
 }
 
 .ProductItem img {
     width: 100%;
-    height: var(--card-size);
+    height: 240px;;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -24,7 +24,7 @@
 }
 .product-info div p:nth-child(2){
     margin: 0px;
-    color: var(--very-ligth-pink);
+    color: $--very-ligth-pink;
 }
 
 .product-info figure{
