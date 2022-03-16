@@ -7,7 +7,7 @@
     place-items: center;
 }
 .title{
-    font-size: var(--lg);
+    font-size: $--lg;
     margin-bottom: 40px;
 }
 .Checkout-container{
@@ -19,7 +19,7 @@
     width: 300px;
 }
 .Checkout-content-summary{
-    background-color: var(--text-input-field);
+    background-color: $--text-input-field;
     border-radius: 10px;
     display: flex;
     justify-content:space-between;
@@ -28,7 +28,7 @@
 }
 .Checkout-content-summary p{
     padding: 0px 15px 0px 15px;
-    color: var(--black);
+    color: $--black;
     font-weight: bold;
 }
 .Checkout-content-summary p:first-child {
@@ -42,5 +42,5 @@
 }
 .Checkout-content-summary span:last-child{
     font-weight: 100;
-    font-size: var(--sm);
+    font-size: $--sm;
 }
