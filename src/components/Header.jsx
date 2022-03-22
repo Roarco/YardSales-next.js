@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Menu from '@components/Menu';
 import MyOrder from '@container/MyOrder';
@@ -16,7 +17,9 @@ const Header = () => {
     <nav className={styles.navbar}>
       <Image src={menu} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
       <div className={styles['navbar-left']}>
-        <Image src={logo} alt='logo' className={styles['navbar-lef-logo']} />
+        <Link href='/'>
+          <Image src={logo} alt='logo' className={styles['navbar-lef-logo']} />
+        </Link>
         <ul>
           <li><a href='/'>All</a></li>
           <li><a href='/'>Clothes</a></li>

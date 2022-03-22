@@ -1,6 +1,8 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/button-has-type */
 import React, { useContext } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import AppContext from '@context/AppContext';
 import arrow from '@icons/flechita.svg';
 import OrderItem from '@components/OrderItem';
@@ -19,7 +21,7 @@ const MyOrder = () => {
   return (
     <aside className={styles.MyOrder}>
       <div className='title-container'>
-        <img src={arrow} alt='arrow' onClick={() => handleToogleOrders()} />
+        <Image src={arrow} alt='arrow' onClick={() => handleToogleOrders()} />
         <p className='MyOrder-title'>My order</p>
       </div>
       <div className='my-order-content'>
@@ -34,9 +36,9 @@ const MyOrder = () => {
           {sumTotal()}
         </p>
       </div>
-      <button className='primary-button'>
+      <Link className='primary-button' href="/checkout">
         Checkout
-      </button>
+      </Link>
     </aside>
   );
 };
