@@ -16,14 +16,14 @@ const ProductItem = ({ product }) => {
   return (
     <div className={styles.ProductItem}>
       {/* <Image src={product.images[0]} alt={product.title} width="100%" height="100%" /> */}
-      {product.images[0] && <Image src={product.images[0]} alt={product.title} width={240} height={240} />}
+      {product?.images[0] && <Image src={product?.images[0]} alt={product?.title} width={240} height={240} />}
       <div className={styles['product-info']}>
         <div>
           <p>
             {'$ '}
-            {product.price}
+            {product?.price}
           </p>
-          <p>{product.title}</p>
+          <p>{product?.title}</p>
         </div>
         <figure>
           { state.cart.includes(product) ? <Image src={added} alt='added' className={styles.added} onClick={() => removeFromCart(product)} /> : <Image src={add} alt='add' onClick={() => addToCar(product)} />}

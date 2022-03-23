@@ -12,6 +12,7 @@
         height: 100vh;
         position: absolute;
         top: inherit;
+        z-index: 1;
     }
     .close {
         position: fixed;

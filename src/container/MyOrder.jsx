@@ -20,14 +20,14 @@ const MyOrder = () => {
 
   return (
     <aside className={styles.MyOrder}>
-      <div className='title-container'>
+      <div className={styles['title-container']}>
         <Image src={arrow} alt='arrow' onClick={() => handleToogleOrders()} />
-        <p className='MyOrder-title'>My order</p>
+        <p className={styles['MyOrder-title']}>My order</p>
       </div>
-      <div className='my-order-content'>
+      <div className={styles['my-order-content']}>
         {state.cart.map((product) => (<OrderItem product={product} key={`orderItem-${product.id}`} />))}
       </div>
-      <div className='order'>
+      <div className={styles.order}>
         <p>
           <span>Total</span>
         </p>
@@ -36,9 +36,12 @@ const MyOrder = () => {
           {sumTotal()}
         </p>
       </div>
-      <Link className='primary-button' href="/checkout">
+
+      <div className={styles['primary-button']} >
+      <Link href="/checkout">
         Checkout
       </Link>
+      </div>
     </aside>
   );
 };

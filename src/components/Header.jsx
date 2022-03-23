@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable import/no-unresolved */
 import React, { useContext } from 'react';
 import Link from 'next/link';
@@ -15,18 +18,18 @@ const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Image src={menu} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
+      <img src={menu.src} alt='menu' className={styles.menu} onClick={() => handleToogleMenuMobile()} />
       <div className={styles['navbar-left']}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <Image src={logo} alt='logo' className={styles['navbar-lef-logo']} />
         </Link>
         <ul>
-          <li><a href='/'>All</a></li>
-          <li><a href='/'>Clothes</a></li>
-          <li><a href='/'>Electronics</a></li>
-          <li><a href='/'>Furniture</a></li>
-          <li><a href='/'>Toys</a></li>
-          <li><a href='/'>Others</a></li>
+          <li><Link href="/">All</Link></li>
+          <li><Link href="/">Clothes</Link></li>
+          <li><Link href="/">Electronics</Link></li>
+          <li><Link href="/">Furniture</Link></li>
+          <li><Link href="/">Toys</Link></li>
+          <li><Link href="/">Others</Link></li>
         </ul>
       </div>
       <div className={styles['navbar-rigth']}>

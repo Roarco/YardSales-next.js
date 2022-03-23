@@ -12,6 +12,7 @@
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid $--very-ligth-pink;
+	z-index: 1;
 }
 .title-container {
 	display: flex;
@@ -25,6 +26,7 @@
 	font-size: $--lg;
 	font-weight: bold;
 	margin-bottom: 18px;
+	margin-left: 10px;
 }
 .my-order-content{
 	overflow-y: auto;
@@ -63,6 +65,9 @@
 	font-size: $--md;
 	font-weight: bold;
 	height: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 640px) {
 	.MyOrder {
