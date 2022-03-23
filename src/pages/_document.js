@@ -7,6 +7,15 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                 <title>Yardsales</title>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8SDK9SJ6Y"></script>
+                <script dangerouslySetInnerHTML={{
+                    __html: `window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-M8SDK9SJ6Y');`
+
+                } }/>
                 </Head>
                 <body>
                     <Main />
@@ -16,3 +25,5 @@ class MyDocument extends Document {
         )
     }
 }
+
+export default MyDocument;
