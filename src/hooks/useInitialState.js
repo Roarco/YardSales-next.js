@@ -13,9 +13,7 @@ const useInitialState = () => {
   const addToCar = (payload) => {
     setState({
       ...state,
-      cart: state.cart.includes(payload) ?
-        state.cart :
-        [...state.cart, payload],
+      cart: state.cart.includes(payload) ? state.cart : [...state.cart, payload],
     });
   };
 
@@ -58,4 +56,3 @@ const useInitialState = () => {
 };
 
 export default useInitialState;
-
